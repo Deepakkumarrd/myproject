@@ -12,7 +12,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 with open('/etc/secret_key.txt') as f:
     SECRET_KEY = f.read().strip()
 
-from decouple import config,Csv
+from decouple import config, Csv
 import dj_database_url
 
 SECRET_KEY = config('SECRET_KEY')
